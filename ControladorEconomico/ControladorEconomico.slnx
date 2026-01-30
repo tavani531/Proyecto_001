@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="ConsoleApp1/ControladorProgram.csproj" />
+  <Project Path="ControladorData/ControladorData.csproj" />
+  <Project Path="ControladorEntities/ControladorEntities.csproj" />
+  <Project Path="ControladorRequests/ControladorRequests.csproj" />
+  <Project Path="ControladorResponse/ControladorResponse.csproj" />
+  <Project Path="ControladorService/ControladorService.csproj" />
+  <Project Path="ControladorWebApi/ControladorWebApi.csproj" />
+</Solution>
