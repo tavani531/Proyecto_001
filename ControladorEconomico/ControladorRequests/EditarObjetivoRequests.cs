@@ -7,10 +7,12 @@ namespace ControladorRequests
 {
     public class EditarObjetivoRequests
     {
+        [Required(ErrorMessage = "El Id es obligatorio"), Range(1, int.MaxValue, ErrorMessage = "El Id debe ser positivo")]
+        public int Id { get; set; }
         [Required(ErrorMessage ="El nombre es obligatorio.")]
-        public string NombreOjetivo { get; set; }
-        [Required(ErrorMessage ="El monto es obligatorio"), Range(1,double.MaxValue,ErrorMessage ="El monto debe ser positivo")]
-        public double MontoMeta { get; set; }
+        public string NombreObjetivo { get; set; }
+        [Required(ErrorMessage ="El monto es obligatorio")]
+        public decimal MontoMeta { get; set; }
         [Required(ErrorMessage ="La fecha limite es obligatoria")]
         public DateTime FechaLimite { get; set; }
     }

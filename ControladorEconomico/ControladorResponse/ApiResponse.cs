@@ -20,6 +20,7 @@ namespace ControladorResponse
         {
             Success = true;
             Message = message;
+            Data= data;
             Errors=new List<string>();
         }
         public ApiResponse(string message, List<string>? errors = null)

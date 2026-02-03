@@ -6,8 +6,9 @@ namespace ControladorResponse
 {
     public class ObjetivoResponse
     {
-        public string NombreOjetivo { get; set; }
-        public double MontoMeta { get; set; }
+        public int Id { get; set; }
+        public string NombreObjetivo { get; set; }
+        public decimal MontoMeta { get; set; }
         public DateTime FechaLimite { get; set; }
     }
 }

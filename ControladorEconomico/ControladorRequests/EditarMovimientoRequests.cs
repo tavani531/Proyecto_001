@@ -7,13 +7,14 @@ namespace ControladorRequests
 {
     public class EditarMovimientoRequests
     {
+        [Required(ErrorMessage = "El Id es obligatorio"), Range(1, int.MaxValue, ErrorMessage = "El Id debe ser positivo")]
+        public int Id { get; set; }
         [Required(ErrorMessage = "La categoria es obligatoria"), Range(1, int.MaxValue, ErrorMessage = "Error en el rango")]
         public int CategoriaId { get; set; }
         [Required(ErrorMessage = "El objetivo es obligatorio"), Range(1, int.MaxValue, ErrorMessage = "Error en el rango")]
-        public int? ObjetivoId { get; set; }
-        [Required(ErrorMessage = "El monto es obligatorio"), Range(1, double.MaxValue, ErrorMessage = "El monto debe ser positivo")]
-        public double Monto { get; set; }
+        public decimal Monto { get; set; }
         [Required(ErrorMessage = "La descripcion es obligatoria")]
         public string Descripcion { get; set; }
+        public DateTime Fecha { get; set; }
     }
 }

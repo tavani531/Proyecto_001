@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Puedes agregar tus estilos personalizados aquí abajo si quieres */
+body {
+    background-color: #f3f4f6; /* Un gris clarito de fondo para toda la app */
+}
